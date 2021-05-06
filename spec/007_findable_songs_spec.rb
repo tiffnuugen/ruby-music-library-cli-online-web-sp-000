@@ -18,7 +18,7 @@ context "Song" do
 
     it "invokes .find_by_name instead of re-coding the same functionality" do
       expect(Song).to receive(:find_by_name).with("Kaohsiung Christmas")
-
+      
       Song.find_or_create_by_name("Kaohsiung Christmas")
     end
 
